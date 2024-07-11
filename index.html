@@ -30,6 +30,28 @@
         position: relative;
         top: 1px;
       }
+
+         .Tutorials {
+            background-color: #ced0d6;
+            border-radius: 20px;
+            border: 4px solid #4c4a59;
+            display: inline-block;
+            cursor: pointer;
+            color: #000000;
+            font-family: Georgia;
+            font-size: 17px;
+            padding: 25px 33px;
+            text-decoration: none;
+        }
+
+        .Tutorials:hover {
+            background-color: #ffffff;
+        }
+
+        .Tutorials:active {
+            position: relative;
+            top: 1px;
+        }
     </style>
 </head>
 <body style="background-color:#202324;">
@@ -41,6 +63,15 @@
         function openLink() {
             window.open("https://theguywithdatophat.github.io/malikthepro-website/stuff/youtube-text.html", "_blank");
         }
+    </script>
+    <script>
+         document.getElementById('scrollButton').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 </html>
